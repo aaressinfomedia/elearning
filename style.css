@@ -42,7 +42,7 @@ nav button {
 nav button:hover {
   align-items: center;
   text-align: center;
-  background-color: rgb(253, 0, 0);
+  background-color: #fd0000;
   color: white;
   font-size: 16px;
   font-weight: 800;
@@ -55,11 +55,11 @@ section {
   justify-content: center;
   align-items: center;
   float: left;
-  background-color: lightgray;
+  background-color: #d3d3d3;
 }
 
 div {
-  width: 80%;
+  width: 100%;
   padding: 10px;
   float: left;
   clear: left;
@@ -74,31 +74,29 @@ span {
 input {
   width: 100%;
   padding: 20px;
-  height: 30px;
-  margin-bottom: 10px;
 }
 
 input[type="submit"] {
-  background-color: brown;
+  background-color: #a52a2a;
   color: white;
   font-size: 20px;
-  border: 1px solid red;
+  border: 1px solid #ff0000;
   width: 100%;
   padding: 20px;
   margin-bottom: 10px;
 }
 
 input[type="submit"]:hover {
-  background-color: rgb(245, 65, 65);
+  background-color: #f54141;
   color: white;
   font-size: 20px;
-  border: 1px solid rgb(62, 2, 2);
+  border: 1px solid #3e0202;
   margin-bottom: 10px;
 }
 
 p {
   margin: 10px 0px;
-  color: red;
+  color: #ff0000;
   padding: 10px;
   font-size: 20px;
 }
@@ -130,7 +128,6 @@ p {
 }
 
 #demo-1 .row {
-  display: inline;
   margin: 5%;
   height: 30px;
   width: 50%;
@@ -147,14 +144,14 @@ h1 {
 
 h2 {
   margin: auto;
-  padding: auto;
+  padding: 10px;
   text-align: center;
 }
 
 button {
   align-items: center;
   text-align: center;
-  background-color: rgb(27, 92, 1);
+  background-color: #444444;
   color: white;
   font-size: 16px;
   font-weight: 800;
@@ -162,7 +159,7 @@ button {
 }
 
 aside {
-  background-color: black;
+  background-color: #444444;
   width: 14%;
   height: auto;
   float: left;
@@ -188,12 +185,16 @@ aside button:hover {
   word-spacing: 2px;
   width: 100%;
   height: auto;
-  background-color: brown;
+  background-color: #a52a2a;
 }
 
 footer {
-  background-color: black;
+  background-color: #000000;
   color: white;
   text-align: center;
   font-size: larger;
+}
+
+.msg {
+  color: #008000;
 }
