@@ -51,18 +51,21 @@ function loanEligibility() {
   // Name Validation
   if (userName === "") {
     nameError.innerHTML = "Name is required.";
+    return false;
   } else {
     if (userName.match(alphaExp)) {
       nameError.innerHTML = "";
       nameStatus = true;
     } else {
       nameError.innerHTML = "Only Characters & Spaces Allowed";
+      return false;
     }
   }
 
   // Cibil Validation
   if (cibil === "") {
     cibilError.innerHTML = "Cibil is required.";
+    return false;
   } else {
     if (cibil.match(numExp)) {
       if (cibil.length == cibilLength) {
@@ -71,23 +74,27 @@ function loanEligibility() {
         cibilStatus = true;
       } else {
         cibilError.innerHTML = "Minimum " + cibilLength + " Digits Required";
+        return false;
       }
     } else {
       cibilError.innerHTML = "Only Digits Allowed";
+      return false;
     }
   }
 
   // Salary Validation
   if (salary === "") {
     salaryError.innerHTML = "Salary is required.";
+    return false;
   } else {
     if (salary.match(numExp)) {
-      if (salary.length == salaryLength) {
+      if (salary.length >= salaryLength) {
         // alert("NumLength Validated");
         salaryError.innerHTML = "";
         salaryStatus = true;
       } else {
         salaryError.innerHTML = "Minimum " + salaryLength + " Digits Required";
+        return false;
       }
     } else {
       salaryError.innerHTML = "Only Digits Allowed";
