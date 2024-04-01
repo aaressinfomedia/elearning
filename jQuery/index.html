@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="jquery-3.7.1.min.js"></script>
+    <title>jQuery</title>
+  </head>
+  <body>
+    <button id="menu">Menu</button>
+    <nav>
+      <button>Home</button>
+      <button>About</button>
+      <button>Blog</button>
+      <button>Shop</button>
+      <button>Contact</button>
+    </nav>
+    <script>
+      // Display nav bar on clock of Menu Button can be used for shoe,hide, toggle,fade etc.
+      $(document).ready(() => {
+        $("#menu").click(() => {
+          // alert("Working");
+          $("nav").slideToggle(500); //slow,slower,fast,faster or in mili sec 1000,2000
+          // $("#menu").animate({
+          //   marginTop: "100px",
+          // });
+        });
+      });
+    </script>
+    <!-- <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti,
+      perspiciatis quos tempore sequi minima distinctio nulla architecto
+      accusantium non perferendis itaque unde aliquid voluptatibus, vel ipsum!
+      Aspernatur consectetur fuga numquam. Lorem ipsum dolor sit amet
+      consectetur, adipisicing elit. Dolore quisquam, enim laborum aliquam qui
+      iure fugit dolores iste odit neque doloremque esse corporis reprehenderit
+      tempora placeat ea commodi asperiores facilis? Lorem ipsum dolor sit amet
+      consectetur adipisicing elit. Accusamus eaque tempore iure minus cumque
+      ratione ad vel soluta qui minima commodi numquam dicta consequatur impedit
+      architecto corporis, earum, hic odio?
+    </p> -->
+    <!-- <script>
+      $(document).ready(() => {
+        $("p").hide();
+      });
+    </script> -->
+  </body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validation</title>
+    <script src="jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section>
+      <div>
+        <div class="input"><img src="logo.jpeg" id="logo" alt="logo" /></div>
+        <button id="change" onclick="changeImg()" style="width: 100%">
+          Change Logo
+        </button>
+        <form onsubmit="return validation()" action="submit.html">
+          <input
+            type="text"
+            name="username"
+            id="username"
+            placeholder="Your Name"
+          />
+          <p id="nameError"></p>
+          <select name="countrycode" id="countrycode">
+            <option value="10">+91 India</option>
+            <option value="8">+1 USA</option>
+            <option value="9">+4 UK</option>
+            <option value="7">+971 UAE</option>
+          </select>
+          <input
+            type="text"
+            name="mobile"
+            id="mobile"
+            placeholder="Your Mobile"
+          />
+          <p id="mobileError"></p>
+          <input
+            type="text"
+            name="email"
+            id="email"
+            placeholder="Your Email Number"
+          />
+          <p id="emailError"></p>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Enter Password"
+          />
+          <!-- <button id="show" onclick="show()"></button> -->
+          <input type="submit" />
+        </form>
+      </div>
+    </section>
+    <script src="validate.js"></script>
+  </body>
+</html>
