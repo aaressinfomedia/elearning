@@ -173,7 +173,7 @@ aside {
 
 aside button {
   margin: 2%;
-  padding: 10px;
+  padding: 20px;
   font-size: 14px;
   font-weight: 800;
   word-spacing: 2px;
@@ -183,7 +183,7 @@ aside button {
 
 aside button:hover {
   margin: 2%;
-  padding: 10px;
+  padding: 20px;
   font-size: 14px;
   font-weight: 800;
   word-spacing: 2px;
