@@ -1,0 +1,201 @@
+* {
+  box-sizing: border-box;
+  margin: 0%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.clearfix {
+  overflow: none;
+  clear: both;
+}
+
+header {
+  width: 100%;
+  /* background-color: greenyellow; */
+  height: auto;
+  padding: 10px;
+  display: flex;
+  border-bottom: 1px solid;
+  /* margin: 2%; */
+}
+
+.logo {
+  width: 10%;
+  float: left;
+  height: 90px;
+  /* background-color: blueviolet; */
+}
+
+nav {
+  width: 90%;
+  padding-top: 15px;
+  box-sizing: border-box;
+  float: right;
+  /* background-color: blue; */
+  text-align: right;
+}
+
+nav button {
+  width: 200px;
+}
+
+nav button:hover {
+  align-items: center;
+  text-align: center;
+  background-color: rgb(253, 0, 0);
+  color: white;
+  font-size: 16px;
+  font-weight: 800;
+  height: 40px;
+}
+section {
+  width: 85%;
+  height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  float: left;
+  background-color: lightgray;
+}
+
+div {
+  width: 80%;
+  padding: 10px;
+  float: left;
+  clear: left;
+}
+
+span {
+  width: 100%;
+  height: auto;
+  clear: both;
+}
+
+input {
+  width: 100%;
+  padding: 20px;
+  height: 30px;
+  margin-bottom: 10px;
+}
+
+input[type="submit"] {
+  background-color: brown;
+  color: white;
+  font-size: 20px;
+  border: 1px solid red;
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
+input[type="submit"]:hover {
+  background-color: rgb(245, 65, 65);
+  color: white;
+  font-size: 20px;
+  border: 1px solid rgb(62, 2, 2);
+  margin-bottom: 10px;
+}
+
+p {
+  margin: 10px 0px;
+  color: red;
+  padding: 10px;
+  font-size: 20px;
+}
+
+#demo {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 800;
+
+  display: none;
+}
+
+#demo-1 {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 800;
+  width: 50%;
+  justify-content: center;
+
+  display: none;
+}
+
+#demo-2 {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 800;
+  width: 50%;
+  justify-content: center;
+  display: none;
+}
+
+#demo-1 .row {
+  display: inline;
+  margin: 5%;
+  height: 30px;
+  width: 50%;
+  text-align: center;
+
+  float: left;
+}
+
+h1 {
+  margin: auto;
+  padding: auto;
+  text-align: center;
+}
+
+h2 {
+  margin: auto;
+  padding: auto;
+  text-align: center;
+}
+
+button {
+  align-items: center;
+  text-align: center;
+  background-color: rgb(27, 92, 1);
+  color: white;
+  font-size: 16px;
+  font-weight: 800;
+  height: 40px;
+}
+
+aside {
+  background-color: black;
+  width: 14%;
+  height: auto;
+  float: left;
+  padding: 10px;
+  text-align: center;
+  margin-left: 1%;
+}
+
+aside button {
+  margin: 2%;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: 800;
+  word-spacing: 2px;
+  width: 100%;
+  height: auto;
+}
+
+aside button:hover {
+  margin: 2%;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: 800;
+  word-spacing: 2px;
+  width: 100%;
+  height: auto;
+  background-color: brown;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-size: larger;
+}
