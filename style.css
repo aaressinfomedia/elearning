@@ -22,7 +22,7 @@ header {
 .logo {
   width: 10%;
   float: left;
-  height: 90px;
+  height: 95px;
   /* background-color: blueviolet; */
 }
 
@@ -117,7 +117,6 @@ p {
   font-weight: 800;
   width: 50%;
   justify-content: center;
-
   display: none;
 }
 
@@ -173,7 +172,7 @@ aside {
 
 aside button {
   margin: 2%;
-  padding: 20px;
+  padding: 10px;
   font-size: 14px;
   font-weight: 800;
   word-spacing: 2px;
@@ -183,7 +182,7 @@ aside button {
 
 aside button:hover {
   margin: 2%;
-  padding: 20px;
+  padding: 10px;
   font-size: 14px;
   font-weight: 800;
   word-spacing: 2px;
