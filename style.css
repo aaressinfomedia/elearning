@@ -2,6 +2,7 @@
   box-sizing: border-box;
   margin: 0%;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: inline-flexbox;
 }
 
 .clearfix {
@@ -51,7 +52,7 @@ nav button:hover {
 }
 section {
   width: 85%;
-  height: 85vh;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -62,15 +63,46 @@ section {
 div {
   width: 100%;
   padding: 10px;
-  float: left;
-  clear: left;
+  display: inline-block;
+}
+
+ul {
+  font-size: 15px;
+  margin: 5%;
+  padding: 10px;
+  text-align: justify;
+  color: #161616;
+}
+
+li {
+  padding-top: 10px;
+}
+
+#light {
+  color: #000000;
+}
+
+#dark {
+  color: #d3d3d3;
+}
+
+#warning {
+  color: #ffaa0d;
+}
+
+#danger {
+  color: #ff0000;
+}
+
+#grey {
+  color: #272727;
 }
 
 img {
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  padding: 5px;
-  width: 100%;
+  width: auto;
+  height: auto;
+  max-height: 500px;
+  text-align: center;
 }
 
 .overlay {
@@ -80,7 +112,7 @@ img {
 
 div .form {
   width: 50%;
-  padding: 10px;
+  padding: 25px;
   float: left;
   clear: left;
 }
@@ -88,9 +120,7 @@ div .form {
 div .form-info {
   width: 50%;
   padding: 10px;
-  float: left;
   clear: left;
-  display: contents;
 }
 
 span {
