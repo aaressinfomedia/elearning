@@ -1,6 +1,7 @@
 function display1() {
   $("#show").click(() => {
     // alert("Working");
+    $("#home").show();
     $("#demo-1").hide();
     $("#demo-2").hide();
     $("#demo").show();
@@ -41,14 +42,14 @@ function changeText() {
 }
 
 function display3() {
-  $("#show2").click(() => {
-    $("#home").hide();
-    $("#demo").hide();
-    $("#demo-1").hide();
-    $("#demo-2").show(() => {
-      //   alert("Working");
-      document.getElementsByTagName("p")[0].innerHTML = "Hello Demo Replaced";
-    }); //slow,slower,fast,faster or in mili sec 1000,2000
+  $("#home").show();
+  $("#demo").hide();
+  $("#demo-1").hide();
+  $("#demo-2").show();
+  $(".show2").click(() => {
+    //   alert("Working");
+    document.getElementsByTagName("p")[0].innerHTML = "Hello Demo Replaced";
+    //slow,slower,fast,faster or in mili sec 1000,2000
 
     // $("#menu").animate({
     //   marginTop: "100px",
