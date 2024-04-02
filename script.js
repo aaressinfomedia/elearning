@@ -15,6 +15,7 @@ function display1() {
 function display2() {
   $("#show1").click(() => {
     // alert("Working");
+    $("#home").hide();
     $("#demo").hide();
     $("#demo-2").hide();
     $("#demo-1").show(); //slow,slower,fast,faster or in mili sec 1000,2000
@@ -24,9 +25,11 @@ function display2() {
   });
 }
 
-$(document).ready(readyFn);
 function changeText() {
   // const sampleData = document.getElementById("sampleData"); //
+  () => {
+    $("#home").hide();
+  };
 
   sampleData.innerHTML =
     "This is Sample Data.. Click Button Below to say Hello";
@@ -39,6 +42,7 @@ function changeText() {
 
 function display3() {
   $("#show2").click(() => {
+    $("#home").hide();
     $("#demo").hide();
     $("#demo-1").hide();
     $("#demo-2").show(() => {
