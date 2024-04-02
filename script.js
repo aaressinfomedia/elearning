@@ -4,6 +4,7 @@ function display1() {
     $("#home").show();
     $("#demo-1").hide();
     $("#demo-2").hide();
+    $("#demo-3").hide();
     $("#demo").show();
     //slow,slower,fast,faster or in mili sec 1000,2000
 
@@ -19,6 +20,7 @@ function display2() {
     $("#home").hide();
     $("#demo").hide();
     $("#demo-2").hide();
+    $("#demo-3").hide();
     $("#demo-1").show(); //slow,slower,fast,faster or in mili sec 1000,2000
     // $("#menu").animate({
     //   marginTop: "100px",
@@ -28,31 +30,56 @@ function display2() {
 
 function changeText() {
   // const sampleData = document.getElementById("sampleData"); //
-  () => {
-    $("#home").hide();
-  };
-
+  // $(document).ready(changeText);
   sampleData.innerHTML =
     "This is Sample Data.. Click Button Below to say Hello";
 
   $("#toggleText").click(() => {
-    document.getElementById("sampleData").style.color = "#000080";
+    document.getElementById("sampleData").style.color = "#a52a2a";
     sampleData.innerHTML = "<h3>HELLO !!!!</h3>";
   });
 }
 
+// function display3() {
+//   let tagName = document.getElementsByTagName("p")[0].value;
+//   // alert("tagName");
+//   $("#home").show();
+//   $("#demo").hide();
+//   $("#demo-1").hide();
+//   $("#demo-2").show(() => {
+//     $("#change").click(() => {
+//
+//       tagName.innerHTML = "Hello Demo Replaced";
+//     });
+//   });
+// }
+
 function display3() {
+  // let tagName = document.getElementsByTagName("p")[0];
   $("#home").show();
   $("#demo").hide();
   $("#demo-1").hide();
-  $("#demo-2").show();
-  $(".show2").click(() => {
-    //   alert("Working");
-    document.getElementsByTagName("p")[0].innerHTML = "Hello Demo Replaced";
-    //slow,slower,fast,faster or in mili sec 1000,2000
+  $("#demo-3").hide();
+  $("#demo-2").show(() => {
+    $("#demo-2").click(() => {
+      document.getElementsByTagName("p")[5].style.color = "#a52a2a";
+      document.getElementsByTagName("p")[5].innerHTML = "Hello Demo Replaced";
+    });
+  });
+}
 
-    // $("#menu").animate({
-    //   marginTop: "100px",
-    // });
+function display4() {
+  $("#home").show();
+  $("#demo").hide();
+  $("#demo-1").hide();
+  $("#demo-2").hide();
+  $("#demo-3").show(() => {
+    $("#demo-3").click(() => {
+      document.getElementsByClassName("test")[0].style.color = "#a52a2a";
+      document.getElementsByClassName("test")[0].innerHTML =
+        "Test 1 Text Change using ClassName";
+      document.getElementsByClassName("test")[1].innerHTML =
+        "Test 2 Text Change using ClassName";
+    });
   });
 }

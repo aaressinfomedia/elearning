@@ -24,7 +24,7 @@
       <button type="button" onclick="display1()" id="show">Practise Change getElementByID</button>
       <button type="button" onclick="display2()" id="show1">Loan Eligibility</button>
       <button type="button" onclick="display3()" id="show2">Practise Change getElementsByTagName</button>
-      <button type="button" onclick="display4()" id="show3">Practise Change getElementByID</button>
+      <button type="button" onclick="display4()" id="show3">Practise Change getElementsByClassName</button>
       <button type="button" onclick="display5()" id="show4">Practise Change getElementByID</button>
       <button type="button" onclick="display6()" id="show5">Practise Change getElementByID</button>
       <button type="button" onclick="display7()" id="show6">Practise Change getElementByID</button>
@@ -46,9 +46,7 @@
         <div>
           <button type="button" id="toggleText" onclick="changeText()">Check Function</button>
         </div>
-        <script>
-          $(document).ready(changeText);
-        </script>
+        
         
       </div>
 
@@ -84,19 +82,36 @@
       </div>  
       <div id="demo-2">
         <div>
-            <p>Use the getElementsByTagName method to find the first "P" element, and change its text to "Hello"."P"</p>
+            <h5>Use the getElementsByTagName method to find the first "P" element, and change its text to "Hello"."P"</h5>
+            <p>Content No.1</p>
             <p>Content No.2</p>
-            <p>Content No.3</p>
-        </div> 
-         <div><button id="show2" onclick="display3()">CHANGE</button></div>   
-      </div>     
+            <p>Content No.2</p>
 
+        </div> 
+         <div><button onclick="display3()">CHANGE TEXT No. 1</button></div>
+          
+      </div>
+      <div id="demo-3">
+          <h3>Click on Button Below to Replace Demo Text using getElementsByClassName</h3>
+          <p class="test">Demo-1</p>
+          <p class="test">Demo-2</p>
+          <div>
+            <button type="button">Click To Change Text</button>
+          </div>
+      </div>     
+      
     
 
     
     </section>      
     
-   
+    <script>
+      $(document).ready(changeText);     
+      
+      $(document).ready(function() {
+      display3();
+  }); 
+    </script>
 
    <footer>
     
