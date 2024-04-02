@@ -35,37 +35,44 @@
         <div>
         <h2>Use the getElementById method to find the "P" element, and change its text to "Hello".</h2>
         </div>
-        <div><p id="sampleData">This is Demo Text which shall be replaced..</p></div>
+        <div><p id="sampleData"></p></div>
         <div>
           <button type="button" id="toggleText" onclick="changeText()">Check Function</button>
         </div>
+        <script>
+          $(document).ready(changeText);
+        </script>
         
       </div>
 
       <div id="demo-1">
-        <h1>Check Your Loan Eligibility</h1>
-        <div>
-        <span><input type="text" id="userName" placeholder="Enter Name"></input>
-        <p id="nameError"></p></span>
-        </div>
-        <div>
-          <span><input type="text" id="cibil" placeholder="Enter Your Cibil Score"></input>
-        <p id="cibilError"></p></span>
-        </div>
-        <div>
-          <span><input type="text" id="salary" placeholder="Enter Your Monthly Salary"></input>
-        <p id="salaryError"></p></span>
-        </div>            
-        
-        <div><button onclick="loanEligibility()">Click Me</button>
-          <p id="status" class="msg"></p>        
-        </div>
+        <div class="form overlay">
+            <h3 style="padding-bottom: 40px; color:#fff;">Check Your Loan Eligibility</h3>
+              <div>
+              <span><input type="text" id="userName" placeholder="Enter Name"></input>
+              <p id="nameError"></p></span>
+              </div>
+              <div>
+                <span><input type="text" id="cibil" placeholder="Enter Your Cibil Score"></input>
+              <p id="cibilError"></p></span>
+              </div>
+              <div>
+                <span><input type="text" id="salary" placeholder="Enter Your Monthly Salary"></input>
+              <p id="salaryError"></p></span>
+              </div>
+              <div><button onclick="loanEligibility()">CHECK LOAN ELIGIBILITY</button>
+                <p id="status" class="msg"></p>        
+              </div>
+          </div>
+          <div class="form-info">
+            <h3 style="padding-bottom: 40px;">Loan Eligibility Check Form Guide</h3>
+          </div>
       </div>  
       <div id="demo-2">
         <div>
-            <p>Use the getElementsByTagName method to find the first "P" element, and change its text to "Hello"."P"</p>
+            <p >Use the getElementsByTagName method to find the first "P" element, and change its text to "Hello"."P"</p>
         </div> 
-         <div><p id="show2"></p></div>   
+         <div><button onclick="display3()">CHANGE</button></div>   
       </div>     
 
     

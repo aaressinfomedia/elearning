@@ -6,7 +6,8 @@
 
 .clearfix {
   overflow: none;
-  clear: both;
+  clear: left;
+  display: inline-block;
 }
 
 header {
@@ -65,6 +66,33 @@ div {
   clear: left;
 }
 
+img {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 100%;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 43%); /* Black background with opacity */
+  z-index: 0; /* Specify a stack order in case you're using a different order for other elements */
+}
+
+div .form {
+  width: 50%;
+  padding: 10px;
+  float: left;
+  clear: left;
+}
+
+div .form-info {
+  width: 50%;
+  padding: 10px;
+  float: left;
+  clear: left;
+  display: contents;
+}
+
 span {
   width: 100%;
   height: auto;
@@ -74,6 +102,7 @@ span {
 input {
   width: 100%;
   padding: 20px;
+  font-size: large;
 }
 
 input[type="submit"] {
@@ -96,7 +125,7 @@ input[type="submit"]:hover {
 
 p {
   margin: 10px 0px;
-  color: #ff0000;
+  color: #272727;
   padding: 10px;
   font-size: 20px;
 }
@@ -113,7 +142,7 @@ p {
   text-align: center;
   font-size: 22px;
   font-weight: 800;
-  width: 50%;
+  width: 100%;
   justify-content: center;
   display: none;
 }
@@ -151,11 +180,14 @@ h2 {
 button {
   align-items: center;
   text-align: center;
-  background-color: #f54141;
+  background-color: #000924;
   color: white;
   font-size: 16px;
   font-weight: 800;
   height: 40px;
+  border: none;
+  max-width: 500px;
+  width: -webkit-fill-available;
 }
 
 aside {
@@ -175,6 +207,7 @@ aside button {
   word-spacing: 2px;
   width: 100%;
   height: auto;
+  letter-spacing: 1px;
 }
 
 aside button:hover {
@@ -196,5 +229,5 @@ footer {
 }
 
 .msg {
-  color: #008000;
+  color: #82ff5c;
 }
