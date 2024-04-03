@@ -1,6 +1,6 @@
 function display1() {
+  // alert("Working");
   $("#show").click(() => {
-    // alert("Working");
     $("#home").show();
     $("#demo-1").hide();
     $("#demo-2").hide();
@@ -15,6 +15,7 @@ function display1() {
 }
 
 function display2() {
+  // alert("Working");
   $("#show1").click(() => {
     // alert("Working");
     $("#home").hide();
@@ -38,6 +39,17 @@ function changeText() {
     document.getElementById("sampleData").style.color = "#a52a2a";
     sampleData.innerHTML = "<h3>HELLO !!!!</h3>";
   });
+}
+
+function resetText() {
+  const sampleData = $("#sampleData");
+
+  // Reset text content and color
+  sampleData.html("This is Sample Data.. Click Button Below to say Hello");
+  sampleData.css("color", "#272727");
+
+  // Reattach event handler to "Check Function" button
+  $("#toggleText").off("click").on("click", changeText);
 }
 
 // function display3() {

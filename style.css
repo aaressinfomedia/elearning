@@ -2,7 +2,6 @@
   box-sizing: border-box;
   margin: 0%;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  display: inline-flexbox;
 }
 
 .clearfix {
@@ -13,19 +12,55 @@
 
 header {
   width: 100%;
-  /* background-color: greenyellow; */
   height: auto;
   padding: 10px;
   display: flex;
   border-bottom: 1px solid;
-  /* margin: 2%; */
 }
 
 .logo {
   width: 10%;
   float: left;
   height: 95px;
-  /* background-color: blueviolet; */
+}
+
+.slider {
+  width: 100% !important;
+  padding: 10px;
+}
+
+.slider img {
+  width: 100%;
+  height: 650px;
+  max-height: 800px;
+  text-align: center;
+}
+
+.slider div {
+  width: 100%;
+  padding: 0px;
+  display: inline-block;
+}
+
+.slider,
+.overlay {
+  background-color: rgba(0, 0, 0, 43%); /* Black background with opacity */
+  z-index: 1; /* Specify a stack order in case you're using a different order for other elements */
+}
+
+button {
+  align-items: center;
+  text-align: center;
+  background-color: #000924;
+  color: white;
+  font-size: 16px;
+  font-weight: 800;
+  height: 40px;
+  border: none;
+  max-width: 500px;
+  width: 250px;
+  border-radius: 8px;
+  display: inline-block;
 }
 
 nav {
@@ -33,15 +68,10 @@ nav {
   padding-top: 15px;
   box-sizing: border-box;
   float: right;
-  /* background-color: blue; */
   text-align: right;
 }
 
-nav button {
-  width: 200px;
-}
-
-nav button:hover {
+button:hover {
   align-items: center;
   text-align: center;
   background-color: #fd0000;
@@ -51,7 +81,7 @@ nav button:hover {
   height: 40px;
 }
 section {
-  width: 85%;
+  width: 86%;
   height: 100%;
   display: flex;
   justify-content: center;
@@ -62,6 +92,12 @@ section {
 
 div {
   width: 100%;
+  padding: 10px;
+  display: inline-block;
+}
+
+nav div {
+  width: 200px;
   padding: 10px;
   display: inline-block;
 }
@@ -78,31 +114,51 @@ li {
   padding-top: 10px;
 }
 
-#light {
+.light {
   color: #000000;
 }
 
-#dark {
+.dark {
   color: #d3d3d3;
 }
 
-#warning {
-  color: #ffaa0d;
+.warning {
+  color: #f4ff55;
 }
 
-#danger {
+.danger {
   color: #ff0000;
 }
 
-#grey {
-  color: #272727;
+.grey {
+  color: #6e6e6e;
+}
+
+.success {
+  color: #1f8500;
+}
+
+#home img {
+  border-radius: 9px;
+  width: 70%;
+  margin: 5px;
+  height: 70%;
+  max-height: 600px;
+  text-align: center;
+  border: 6px solid #fff;
+  box-shadow: 1px 3px 10px 3px #444;
 }
 
 img {
-  width: auto;
-  height: auto;
-  max-height: 500px;
+  width: 100%;
+  height: 100vh;
+  max-height: 600px;
   text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
 }
 
 .overlay {
@@ -111,10 +167,14 @@ img {
 }
 
 div .form {
-  width: 50%;
-  padding: 25px;
+  margin: 20px;
+  border: 5px solid #fff;
+  border-radius: 10px;
+  width: 45%;
+  padding: 28px;
   float: left;
   clear: left;
+  box-shadow: 1px 3px 10px 3px #444;
 }
 
 div .form-info {
@@ -164,8 +224,15 @@ p {
   text-align: center;
   font-size: 22px;
   font-weight: 800;
-
   display: none;
+}
+
+#demo span {
+  width: auto;
+  height: auto;
+  display: inline-block;
+  min-width: 250px;
+  padding-right: 25px;
 }
 
 #demo-1 {
@@ -267,5 +334,14 @@ footer {
 }
 
 .msg {
-  color: #82ff5c;
+  color: #1f8500;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: large;
+}
+
+.error {
+  color: #ffe738;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: medium;
+  text-transform: uppercase;
 }

@@ -102,14 +102,26 @@ function loanEligibility() {
   }
 
   if (cibil > 850 && salary > 90000) {
-    msg.innerHTML = userName + " you are Eligible for Loan of 15 Lakh";
+    msg.innerHTML =
+      "CONGRATULATIONS !!! " +
+      userName +
+      " you are Eligible for Loan of 15 Lakh";
   } else if (cibil > 800 && salary > 75000) {
-    msg.innerHTML = userName + " you are Eligible for Loan of 10 Lakh";
+    msg.innerHTML =
+      "CONGRATULATIONS !!! " +
+      userName +
+      " you are Eligible for Loan of 10 Lakh";
   } else if (cibil > 750 && salary > 50000) {
-    msg.innerHTML = userName + " you are Eligible for Loan of 5 Lakh";
+    msg.innerHTML =
+      "CONGRATULATIONS !!! " +
+      userName +
+      " you are Eligible for Loan of 5 Lakh";
   } else if (cibil > 725 && salary > 35000) {
-    msg.innerHTML = userName + " you are Eligible for Loan of 3 Lakh";
+    msg.innerHTML =
+      "CONGRATULATIONS !!! " +
+      userName +
+      " you are Eligible for Loan of 3 Lakh";
   } else {
-    msg.innerHTML = userName + " Better Luck Next Time.";
+    msg.innerHTML = "SORRY !!! " + userName + " Better Luck Next Time.";
   }
 }

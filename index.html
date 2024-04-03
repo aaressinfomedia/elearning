@@ -2,126 +2,65 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
     <script src="jquery-3.7.1.min.js"></script>
-    
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="Banner-Carousel/src/css/style.css"
+    />
+    <link
+      href="Banner-Carousel/sr/css/jquerysctipttop.css"
+      rel="stylesheet"
+      type="text/css"
+    />
   </head>
   <body>
     <header>
-      <img src="logo.jpg" alt="logo" class="logo">
+      <img src="logo.jpg" alt="logo" class="logo" />
       <nav>
-        <button>Home</button>
-        <button>About Me</button>
-        <button>My Practice</button>
-        <button>Blog</button>
-        <button>Contact Me</button>
+        <div>
+          <button><a class="button" href="#home">Home</a></button>
+        </div>
+        <div>
+          <button>
+            <a class="button" href="dom_practice.html">Practice</a>
+          </button>
+        </div>
       </nav>
     </header>
-    <aside>
-      <button type="button" onclick="display1()" id="show">Practise Change getElementByID</button>
-      <button type="button" onclick="display2()" id="show1">Loan Eligibility</button>
-      <button type="button" onclick="display3()" id="show2">Practise Change getElementsByTagName</button>
-      <button type="button" onclick="display4()" id="show3">Practise Change getElementsByClassName</button>
-      <button type="button" onclick="display5()" id="show4">Practise Change getElementByID</button>
-      <button type="button" onclick="display6()" id="show5">Practise Change getElementByID</button>
-      <button type="button" onclick="display7()" id="show6">Practise Change getElementByID</button>
 
-    </aside>
-    
-      
-    
-    <section> 
-      <div id="home" style="text-align: center;">
-        <h2>My E-Lerning Class Practice</h2>
-        <img src="portrait-successful-programmer.avif" alt="my coding image" >
-      </div>         
-      <div id="demo">
-        <div>
-        <h2>Use the getElementById method to find the "P" element, and change its text to "Hello".</h2>
+    <section class="slider overlay">
+      <div class="hslider autoplay" id="J_slider4">
+        <ul class="hslider-content autoplay">
+          <li class="hslider-c active">
+            <a href="#"><img width="100%" height="650" src="img/b1.png" /></a>
+          </li>
+          <li class="hslider-c">
+            <a href="#"><img width="100%" height="650" src="img/b2.png" /></a>
+          </li>
+          <li class="hslider-c">
+            <a href="#"><img width="100%" height="650" src="img/b3.png" /></a>
+          </li>
+          <li class="hslider-c">
+            <a href="#"><img width="100%" height="650" src="img/b4.png" /></a>
+          </li>
+        </ul>
+        <ol class="hslider-nav">
+          <li class="hslider-n active">1</li>
+          <li class="hslider-n">2</li>
+          <li class="hslider-n">3</li>
+          <li class="hslider-n">4</li>
+        </ol>
+        <div class="hslider-pager">
+          <div class="next">&gt;</div>
+          <div class="prev">&lt;</div>
         </div>
-        <div><p id="sampleData"></p></div>
-        <div>
-          <button type="button" id="toggleText" onclick="changeText()">Check Function</button>
-        </div>
-        
-        
       </div>
-
-      <div id="demo-1">
-        <div class="form overlay">
-            <h3 style="padding-bottom: 40px; color:#fff;">Check Your Loan Eligibility</h3>
-              <div>
-              <span><input type="text" id="userName" placeholder="Enter Name"></input>
-              <p id="nameError"></p></span>
-              </div>
-              <div>
-                <span><input type="text" id="cibil" placeholder="Enter Your Cibil Score"></input>
-              <p id="cibilError"></p></span>
-              </div>
-              <div>
-                <span><input type="text" id="salary" placeholder="Enter Your Monthly Salary"></input>
-              <p id="salaryError"></p></span>
-              </div>
-              <div><button onclick="loanEligibility()">CHECK LOAN ELIGIBILITY</button>
-                <p id="status" class="msg"></p>        
-              </div>
-          </div>
-          <div class="form-info">
-            <h4 style="padding-bottom: 40px;">Loan Eligibility Form Guide</h4>
-            <ul class="warning">
-              <li>Please Enter All Three Fields accuratly to get correct results.</li>
-              <li>Please Enter All Three Fields accuratly to get correct results.</li>
-              <li>Please Enter All Three Fields accuratly to get correct results.</li>
-              <li>Please Enter All Three Fields accuratly to get correct results.</li>
-              <li>Please Enter All Three Fields accuratly to get correct results.</li>
-            </ul>
-          </div>
-      </div>  
-      <div id="demo-2">
-        <div>
-            <h5>Use the getElementsByTagName method to find the first "P" element, and change its text to "Hello"."P"</h5>
-            <p>Content No.1</p>
-            <p>Content No.2</p>
-            <p>Content No.2</p>
-
-        </div> 
-         <div><button onclick="display3()">CHANGE TEXT No. 1</button></div>
-          
-      </div>
-      <div id="demo-3">
-          <h3>Click on Button Below to Replace Demo Text using getElementsByClassName</h3>
-          <p class="test">Demo-1</p>
-          <p class="test">Demo-2</p>
-          <div>
-            <button type="button">Click To Change Text</button>
-          </div>
-      </div>     
-      
-    
-
-    
-    </section>      
-    
-    <script>
-      $(document).ready(changeText);     
-      
-      $(document).ready(function() {
-      display3();
-  }); 
-    </script>
-
-   <footer>
-    
-   </footer> 
-    
-    <script src="loanEligibility.js"></script>
-    <script src="script.js"></script>
-
-
-   
+    </section>
 
     <!-- Change the text of the first element that has the class name "test". -->
 
@@ -190,7 +129,31 @@
       console.log("Button is clicked");
     </script> -->
 
-    
+    <script src="Banner-Carousel/src/js/hslider.js"></script>
+
+    <script>
+      $(function ($) {
+        $("#J_slider").hslider();
+
+        $("#J_slider2").hslider({
+          animation: "horizontal",
+          firstRandom: false,
+        });
+
+        $("#J_slider3").hslider({
+          animation: "vertical",
+          autoPlay: false,
+          firstRandom: false,
+          infinite: true,
+        });
+
+        $("#J_slider4").hslider({
+          animation: "fade",
+          autoPlay: false,
+          firstRandom: false,
+          infinite: false,
+        });
+      });
+    </script>
   </body>
 </html>
-
