@@ -36,6 +36,8 @@ body {
   width: 10%;
   float: left;
   height: 95px;
+  min-width: 225px;
+  display: block;
 }
 
 .slider {
@@ -62,7 +64,9 @@ body {
 }
 
 .side-menu {
-  width: 16%;
+  width: 100%;
+  display: flex;
+  max-width: 280px;
 }
 
 button {
@@ -99,7 +103,7 @@ button:hover {
 }
 
 section {
-  height: 700px;
+  height: auto;
   width: -webkit-fill-available;
   display: flex;
   justify-content: center;
@@ -199,7 +203,7 @@ div .form {
   margin: 20px;
   border: 5px solid #fff;
   border-radius: 10px;
-  width: 45%;
+  width: 50%;
   padding: 28px;
   float: left;
   clear: left;
@@ -259,7 +263,7 @@ p {
 #demo span {
   width: auto;
   height: auto;
-  display: inline-block;
+  display: inline-flex;
   min-width: 250px;
   padding-right: 25px;
 }
@@ -324,6 +328,7 @@ button {
 
 @media screen {
 }
+
 aside {
   height: 100vh;
   float: left;
